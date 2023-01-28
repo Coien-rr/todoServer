@@ -27,8 +27,8 @@ app.use("/workplace", require("./routes/api/workplace.js"));
 app.use(errorHandler);
 
 mongoose.connection.once("open", () => {
-	console.log("Connect to MongoDB successfully! 🎉");
+	console.log(" 🎉 Connect to MongoDB successfully! ");
 	app.listen(PORT, () => {
-		console.log(`Server running on port ${PORT}! 🚀`);
+		console.log(` 🚀 Server running on port ${PORT}! `);
 	});
 });
